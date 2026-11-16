@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "build:watch": "tsc --watch",
+    "build:watch": "node init && tsc --watch",
     "clean": "rm -rf dist",
     "test:run": "vitest run",
     "test:watch": "vitest"

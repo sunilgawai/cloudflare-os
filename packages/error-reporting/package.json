@@ -9,7 +9,7 @@
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "clean": "rm -rf dist",
     "test:run": "vitest run"
   },

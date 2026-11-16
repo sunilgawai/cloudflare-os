@@ -4,7 +4,7 @@
   "type": "module",
   "main": "./src/gitlab.ts",
   "scripts": {
-    "dev": "echo \"run 'pnpm dev-server' in the root directory instead\" >&2 && exit 1",
+    "dev": "node init && echo \"run 'pnpm dev-server' in the root directory instead\" >&2 && exit 1",
     "deploy": "vp run --no-cache build:configurator && wrangler deploy",
     "clean": "rm -rf dist src/generated",
     "test:run": "vp run -F @gadgets/gitlab-gatekeeper build:configurator && vitest run && vitest run -c vitest.worker.config.ts"

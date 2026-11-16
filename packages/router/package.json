@@ -4,9 +4,9 @@
   "type": "module",
   "main": "./src/index.ts",
   "scripts": {
-    "dev": "echo \"run 'pnpm dev-server' in the root directory instead\" >&2 && exit 1",
+    "dev": "node init && echo \"run 'pnpm dev-server' in the root directory instead\" >&2 && exit 1",
     "deploy": "wrangler deploy",
-    "build": "tsc",
+    "build": "node init && tsc",
     "clean": "rm -rf dist",
     "test:run": "vitest run",
     "test:watch": "vitest"

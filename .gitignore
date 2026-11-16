@@ -27,7 +27,6 @@ packages/api-cli/generated/
 
 # Cloudflare Workers
 .wrangler
-.env
 
 # Local dev secrets (loaded by run-dev-server.ts)
 .dev.vars*
@@ -50,3 +49,4 @@ wrangler.dev.jsonc
 .dev.vars.*
 **/.dev.vars
 **/.dev.vars.*
+config.bat

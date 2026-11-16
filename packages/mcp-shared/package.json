@@ -25,7 +25,7 @@
     "./util": "./src/util.ts"
   },
   "scripts": {
-    "build": "tsc && tsc -p tsconfig.test.json",
+    "build": "node init && tsc && tsc -p tsconfig.test.json",
     "clean": "rm -rf dist",
     "test:run": "vitest run"
   },
